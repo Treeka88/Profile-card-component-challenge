@@ -1,0 +1,63 @@
+html{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+body{
+    background: hsl(185, 75%, 39%);
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-position: top -380% left -15%, right -12% bottom -400%;
+    background-size: 600px, 600px;
+    background-repeat: no-repeat, no-repeat;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 100px auto;
+    width: 390px;
+    height: 450px;
+    background: white;
+    border: none;
+    border-radius: 22px;
+    background-image: url(bg-pattern-card.svg);
+    background-size: 390px 119px;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.p-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.p-info h4{
+    color: hsl(229, 23%, 23%);
+}
+.p-info p, span{
+    font-size: 16px;
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+}
+.p-stats{
+    display: grid;
+    /* i splited the div to 3 columns 120px each */
+    grid-template-columns: repeat(3, 120px);
+    /* i splited the div to  rows 25px each */
+    grid-template-rows: repeat(2, 25px);
+    border-top: 2px solid hsl(0, 0%, 59%);
+    gap: 0.5rem;
+    text-align: center;
+}
+.p-stats h4{
+    color: hsl(229, 23%, 23%);
+}
+.p-stats p{
+    color: hsl(0, 0%, 59%);
+}
+.p-img{
+    width: 135px;
+    border:  6px solid white;
+    border-radius: 50%;
+}
